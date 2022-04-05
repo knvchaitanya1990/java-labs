@@ -45,7 +45,7 @@ class Employee {
     public static void main(String[] args) {
         Employee emp1 = new Employee(" ", 123, 0);
         try{
-            System.out.println("You entered Employee Details (name,age,salary)");
+            System.out.println("Please enter Employee Details (name,age,salary)");
             // Using Scanner for Getting Input from User
             Scanner in = new Scanner(System.in);
             String name = in.nextLine();
@@ -54,8 +54,8 @@ class Employee {
             else
                 emp1.setName(name);
             int age = in.nextInt();
-            if(!(age>0) && !(age < 120))
-                System.out.println("Age Should be between 0 & 120");
+            if(!(age>0) || (age > 120))
+                System.out.println("Age Should be in between 0 & 120");
             else
                 emp1.setAge(age);
             int sal = in.nextInt();
