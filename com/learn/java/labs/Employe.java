@@ -10,6 +10,10 @@ class Employee {
         this.salary = salary;
     }
 
+    public Employee() {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -43,7 +47,7 @@ class Employee {
                 '}';
     }
     public static void main(String[] args) {
-        Employee emp1 = new Employee(" ", 123, 0);
+        Employee emp1 = new Employee();
         try{
             System.out.println("Please enter Employee Details (name,age,salary)");
             // Using Scanner for Getting Input from User
