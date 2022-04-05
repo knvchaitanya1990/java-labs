@@ -18,7 +18,6 @@ class Employee {
                 '}';
     }
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
         Employee emp1 = new Employee(" ", 123, 0);
         if (emp1.name == " ")
             System.out.println("Name can't be blank");
@@ -26,7 +25,6 @@ class Employee {
             System.out.println("Age can't be more than 120");
         if (emp1.salary < 0)
             System.out.println("Salary can't be negative");
-        in.close();
         System.out.println(emp1.toString());
     }
 }
